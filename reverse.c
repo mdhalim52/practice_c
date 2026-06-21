@@ -18,15 +18,17 @@ int main()
             return 1;
         }
 
-        int *num = (int *)malloc(length*sizeof(int));
-        input(num, length);
-        output(num, length);
+    //memory allocation
+    int *num = (int *)malloc(length*sizeof(int));
 
-        find_rev(num, length);
+    input(num, length);
+    output(num, length);
 
-        free(num);
+    find_rev(num, length);
 
-        return 0;
+    free(num);
+
+    return 0;
 }
 
 //user defined function for input 
